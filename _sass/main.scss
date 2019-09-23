@@ -1,0 +1,133 @@
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+/* !!! BODY !!!  */
+body {
+  background-size: 150%;
+  background-image: url("/assets/img/homepage.jpg");
+}
+.wrapper{
+  text-align:center;
+  color:#e6ddd7;
+  letter-spacing: 4px;
+
+  h1,h2,h3,p{
+    max-width: 80%;
+    text-align: center;
+
+  }
+}
+.box-wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "1 2";
+  margin-bottom: 20rem;
+  margin-top: 10rem;
+  width: 100%;
+  padding: 10px;
+}
+.left-content{
+  grid-area: 1;
+}
+right-content{
+  grid-area: 2;
+  
+}
+.left-animation{
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateX(-300px);
+}
+.right-animation{
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateX(300px);
+}
+.text-box{
+  
+  width: 100%;
+  
+  background-color: black;
+  opacity: 0.3;
+  
+}
+.visible{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.img{
+  width: 100%;
+}
+
+.button {
+  color: red;
+
+  /* &:hover {
+    
+  } */
+}
+
+
+header,main,footer { padding: 1em; }
+h1,h2 { 
+  font-family: Opticorvinus; 
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3em;
+  
+}
+h2 { 
+  font-size: 2em;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid #f00;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 68, 255);
+  }
+}
+
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+@import 'nav';
+
