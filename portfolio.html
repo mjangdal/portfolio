@@ -1,14 +1,15 @@
 ---
 layout: default
-title: "About"
+title: "Portfolio"
 background-image:
 ---
 
-<div class="box-wrapper right-animation">
-  <div class="slider left-content">
-    <img class="mySlides img" src="/assets/img/html1.JPG" />
+<div class="box-wrapper top-animation">
+  <div class="slider left-content" onclick="gallery('html-pic')">
+      
+    <img class="mySlides img" id="html-pic" src="/assets/img/html1.JPG"/>
   </div>
-
+ 
   <div class="text-box right-content">
     <p class="text">Jag och två klasskamrater byggde en sida som beskrev HTML & CSS historia. Sidan blev byggd med bara HTML och CSS. 
     Den är gjord i en layout som en nyhetssida med två columner, minskar man vyn så går det ihop och bli en column.
@@ -40,7 +41,7 @@ background-image:
 
 <div class="box-wrapper right-animation">
   <div class="video left-content">
-    <video src="/assets/img/got-balls.mp4" class="img"></video>
+    <img src="/assets/img/got-balls.JPG" class="img slider"/>
   </div>
   <div class="text-box right-content">
     <p>
@@ -50,4 +51,8 @@ background-image:
       Det var Unity som fick mig att komma in i programmering igen och det är ett bra break från CSS härvan på frontend...
     </p>
   </div>
+
+
 </div>
+
+<div id="overlay"></div>
