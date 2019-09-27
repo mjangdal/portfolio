@@ -54,3 +54,4 @@ function gallery(i){
     
 }
 
+  
